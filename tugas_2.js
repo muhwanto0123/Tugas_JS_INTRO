@@ -4,7 +4,7 @@ const english = 70;
 const IPA = 90;
 
 let count = ((mtk + bahasaIndonesia + english + IPA)/4)
-let integers = Math.ceil(count)
+let integers = Math.ceil(count) //method
 console.log(`Rata-Rata = ${integers}`)
 
 for (let i = integers;i <= 100;i++){

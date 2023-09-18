@@ -14,11 +14,21 @@ let data = {
     website:"karyasederhanamandiri.blogspot.com"
 }
 
-let update_name = "Gusti Muhammad Wardi Wanto"
-let update_email = "muhtiwanto@gmail.com"
-let hoby = "menulis"
-console.log({...data, name : update_name, email : update_email})
-console.log({...data, hoby : hoby})
+let update_name = "Gusti Muhammad Wardi Wanto";
+let update_email = "muhtiwanto@gmail.com";
+let hoby = "menulis";
 
-console.log(data.address.city)
-console.log(data.address.street)
+// Menggunakan spread operator untuk membuat objek baru yang telah diperbarui
+const updatedData = { ...data, name: update_name, email: update_email };
+console.log(updatedData);
+
+// Menambahkan properti hoby ke objek yang baru
+updatedData.hoby = hoby;
+console.log(updatedData);
+
+
+
+//destructuring
+let {city, street} = data.address
+console.log(city)
+console.log(street)

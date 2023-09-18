@@ -1,8 +1,8 @@
 const printSegitiga = 7;
-for (let i = 1; i <= printSegitiga; i++) {
+for (let line = 1; line <= printSegitiga; i++) {
   let row = '';
-  for (let j = 1; j <= i; j++) {
-    row += j;
+  for (let number = 1; number <= i; number++) {
+    row += number;
   }
   console.log(row);
 }
